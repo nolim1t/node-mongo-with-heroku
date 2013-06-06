@@ -1,0 +1,17 @@
+{
+    "name": "node-mongo-with-heroku",
+    "version": "1.0.0",
+    "engines": {
+        "node": "0.6.7"
+    },
+    "dependencies": {
+    	"coffee-script": "1.2.0",
+        "mongodb": "0.9.9-8",
+        "bson": "0.0.4",
+        "mongodb-wrapper": "0.3.0",
+    },
+    "engines": {
+        "node": "0.8.x",
+        "npm": "1.1.x"
+    }
+}
