@@ -13,3 +13,15 @@ or
 
 git submodule init
 git submodule update
+
+How to use in code
+----------------------
+The directory before the submodule should be used like this
+
+```coffeescript
+mongolib = require('./mongo/mongo.coffee')
+
+exports.dbhandler = mongolib.dbhandler
+
+exports.ObjectID = mongolib.ObjectID
+```
