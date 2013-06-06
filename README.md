@@ -7,7 +7,7 @@ How to use
 ----------------------
 
 
-git submodule add git@github.com:nolim1t/node-mongo-with-heroku.git
+git submodule add git@github.com:nolim1t/node-mongo-with-heroku.git /app/path/to/submodule
 
 or 
 
