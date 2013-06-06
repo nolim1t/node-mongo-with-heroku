@@ -14,7 +14,7 @@ else
 	dbport = process.env.MONGOPORT || 27017
 	dbuser = process.env.MONGOUSER || undefined
 	dbpass = process.env.MONGOPASS || undefined
-	dbcontainer = process.env.MONGOCONTAINER || "dev_relevant"
+	dbcontainer = process.env.MONGOCONTAINER || "dev"
 
 mongo = require 'mongodb-wrapper'
 
