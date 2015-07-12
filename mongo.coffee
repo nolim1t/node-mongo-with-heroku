@@ -10,8 +10,8 @@ if process.env.MONGOHQ_URL != undefined
 	dbport = connection.split(':')[1].split('/')[0]
 	dbcontainer = connection.split(':')[1].split('/')[1]
 else
-	dbhost = process.env.MONGOHOST || "localhost"
-	dbport = process.env.MONGOPORT || 27017
+	dbhost = process.env.MONGOHOST || process.env.MONGODB_PORT_27017_TCP_ADDR ||  "localhost"
+	dbport = process.env.MONGOPORT || process.env.MONGODB_PORT_27017_TCP_PORT || 27017
 	dbuser = process.env.MONGOUSER || undefined
 	dbpass = process.env.MONGOPASS || undefined
 	dbcontainer = process.env.MONGOCONTAINER || "dev"
