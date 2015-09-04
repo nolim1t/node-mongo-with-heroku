@@ -43,6 +43,8 @@ else
 					hostArray.push to_push
 					arrayCount = arrayCount + 1
 				opts = uri.options
+				if opts.replicaSet != undefined
+					opts.rs_name = opts.replicaSet
 			dbuser = process.env.MONGOUSER || uri.username || undefined
 			dbpass = process.env.MONGOPASS || uri.password || undefined
 	else
